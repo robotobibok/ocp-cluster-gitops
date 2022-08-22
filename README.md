@@ -23,3 +23,14 @@ core - wszystkie podstawowe komponenty/konfigi itd dla klastra, applicationsety 
         argocd.argoproj.io/openshift-gitops configured
         subscription.operators.coreos.com/openshift-gitops-operator unchanged
 
+po dodaniu appsetu juz argo czuwa nad tym repo i je automatycznie wczytuje
+oc apply -k ocp02-eskom-demo/core/gitops-controller
+clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-for-ocpgitops unchanged
+appproject.argoproj.io/test-project unchanged
+applicationset.argoproj.io/cluster created
+argocd.argoproj.io/openshift-gitops configured
+subscription.operators.coreos.com/openshift-gitops-operator unchanged
+
+
+
+tenants - aplikacje 
