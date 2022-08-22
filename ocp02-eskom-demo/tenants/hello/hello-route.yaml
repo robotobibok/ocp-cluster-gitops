@@ -5,7 +5,7 @@ metadata:
     app: welcome-php
     app.kubernetes.io/instance: myapp
   name: welcome-php
-  namespace: foobar
+  namespace: hello-go
 spec:
   port:
     targetPort: 8080
