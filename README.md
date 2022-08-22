@@ -10,3 +10,11 @@ bootstrap - instalacja gitops/argo na klastrze + dodanie uprawnien
         subscription.operators.coreos.com/openshift-gitops-operator created
 
 components - rzeczy dla kontrolera gitops, zeby mogl dzialac, np applicationsets etc
+    oc apply -k ocp02-eskom-demo/bootstrap/overlays/default/
+        clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-for-ocpgitops unchanged
+        appproject.argoproj.io/test-project created
+        argocd.argoproj.io/openshift-gitops configured
+        subscription.operators.coreos.com/openshift-gitops-operator unchanged
+
+core - wszystkie podstawowe komponenty/konfigi itd dla klastra, applicationsety wskazuja tutaj
+    oc apply -k ocp02-eskom-demo/core/gitops-controller
