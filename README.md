@@ -18,3 +18,8 @@ components - rzeczy dla kontrolera gitops, zeby mogl dzialac, np applicationsets
 
 core - wszystkie podstawowe komponenty/konfigi itd dla klastra, applicationsety wskazuja tutaj
     oc apply -k ocp02-eskom-demo/core/gitops-controller
+        clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-for-ocpgitops unchanged
+        appproject.argoproj.io/test-project unchanged
+        argocd.argoproj.io/openshift-gitops configured
+        subscription.operators.coreos.com/openshift-gitops-operator unchanged
+
