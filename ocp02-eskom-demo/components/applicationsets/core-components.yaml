@@ -28,6 +28,6 @@ spec:
       source:
         repoURL: https://github.com/robotobibok/ocp-cluster-gitops
         targetRevision: main
-        path: '{{path}}'
+        path: ocp02-eskom-demo/core/*
       destination:
         server: https://kubernetes.default.svc
