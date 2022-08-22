@@ -5,11 +5,11 @@ metadata:
   namespace: openshift-gitops
 spec:
   generators:
-    - git:
-      repoURL: https://github.com/robotobibok/ocp-cluster-gitops
-      revision: main
-      directories:
-      - path: ocp02-eskom-demo/core/*
+  - git:
+    repoURL: https://github.com/robotobibok/ocp-cluster-gitops
+    revision: main
+    directories:
+    - path: ocp02-eskom-demo/core/*
   template:
     metadata:
       name: '{{path.basename}}'
