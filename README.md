@@ -40,3 +40,6 @@ until oc apply -k ocp02-eskom-demo/bootstrap/overlays/default; do sleep 3; done
 
 
 oc get apps / appsets -n openshift-gitops
+
+
+teraz mozna dodawac kolejne 
