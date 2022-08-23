@@ -1,8 +1,0 @@
-[root@helper ~]# cat users.htpasswd
-user:$2y$05$2i5t5EHGGzX18d40UB1tDenDj1dSH568bPaQvpZeZVIPJihi6R9yS
-developer:$2y$05$xFyRT426wnge5x83GC/.zeez7bYp1swOnA0iNfPrd/r.OsNC3CyGK
-operator:$2y$05$Bx.1ziig.cWW31BgjXMIY.XQHW/PGMgzrXtFYiURpkXSDsliEfFn6
-security:$2y$05$JwFhrJTovatXBBMW4DHvTOWnWH63qEyXfwOOBgY/kI4uYhp0uRerG
-admin:$2y$05$ZkQ2u5gkoxRbiMVSP090bOTQ65x4w2f4KNBdaFgvtPCbKsvEp7nce
-
-# user/user, operator/operator, developer/developer,security/security
